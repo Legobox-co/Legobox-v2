@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 
 export default ({data}) => {
     const post = data.markdownRemark
+
     return (
         <Layout>
             <div className="container">
@@ -11,9 +12,10 @@ export default ({data}) => {
                     <div class="container">
                         <div class="row mx-5">
                         <div class="col-12">
-                            <h1>{post.frontmatter.title}</h1>
+                            <h1 className="font-weight-bold">{post.frontmatter.title}</h1>
+                            <h4 className="font-weight-light">{post.frontmatter.description || null}</h4>
                         </div>
-                        <div className="mt-5 col-12" dangerouslySetInnerHTML={{ __html: post.html }}>
+                        <div className="mt-5 col-12 editor" dangerouslySetInnerHTML={{ __html: post.html }}>
                         </div>
                         </div>
                     </div>
@@ -29,6 +31,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        description
       }
     }
   }

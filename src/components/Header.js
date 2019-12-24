@@ -8,7 +8,7 @@ export default ({data}) => {
         <div className="container">
             <nav className="navbar navbar-expand-lg navbar-transparent bg-transparent">
                 <a className="navbar-brand" href="#">
-                    <img src={img} className="navbar-brand-img" alt={data.site.siteMetadata.title}/>
+                    <img src={img} style={{width: 50}} className="navbar-brand-img" alt={data.site.siteMetadata.title}/> {data.site.siteMetadata.title}
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <Menu className="text-primary" />
@@ -16,19 +16,19 @@ export default ({data}) => {
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
-                    <li className="nav-item mx-2">
-                            <Link className="nav-link" activeClassName="text-primary"  to="/">Home</Link>
+                        <li className="nav-item mx-2">
+                            <Link className="nav-link" activeClassName="text-primary"  to="/">About</Link>
                         </li>
                         <li className="nav-item mx-2">
-                            <Link className="nav-link" activeClassName="text-primary"  to="/work">Work</Link>
+                            <Link className="nav-link" activeClassName="text-primary"  to="/work">Service</Link>
                         </li>
                         <li className="nav-item mx-2">
                             <Link className="nav-link" activeClassName="text-primary"  to="/about">
-                                About
+                                Work
                             </Link>
                         </li>
                         <li className="nav-item mx-2">
-                            <Link className="nav-link" activeClassName="text-primary"  to="/contact">Contact</Link>
+                            <Link className="nav-link" activeClassName="text-primary"  to="/contact">How we work</Link>
                         </li>
                     </ul>
                 </div>

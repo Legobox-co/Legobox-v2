@@ -1,7 +1,7 @@
 {
-  "name": "adegoke-damola-portfolio-v1",
+  "name": "legobox-v2",
   "private": true,
-  "description": "Portfolio for Adegoke Damola",
+  "description": "Portfolio for legobox",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -30,7 +30,10 @@
     "popper.js": "^1.15.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-feather": "^2.0.3"
+    "react-feather": "^2.0.3",
+    "react-helmet": "^5.2.1",
+    "react-transition-group": "^4.3.0",
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "prettier": "^1.18.2"

@@ -4,7 +4,7 @@ import Layout from "@components/Layout"
 import { ArrowRight, ArrowDownCircle } from "react-feather"
 import { graphql } from "gatsby"
 
-const headerPic = require('../assets/HeaderPic.png')
+const headerPic = require('../assets/HeaderPic.jpeg')
 const projectPic = require('../assets/Project.png')
 
 export default ({data}) => <React.Fragment>

@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "@components/Layout"
 import {graphql, Link} from "gatsby"
 
-const headerPic = require('../assets/HeaderPic.png')
+const headerPic = require('../assets/HeaderPic.jpeg')
 const projectPic = require('../assets/Project.png')
 
 export default ({data}) => <React.Fragment>
